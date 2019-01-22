@@ -94,6 +94,10 @@ h2 {
 }
 
 .slide {
+	width: 520px;
+	margin-left: auto;
+	margin-right: auto;
+
 	.byline a {
 		color: #888 !important;
 	}
@@ -141,17 +145,7 @@ h2 {
 		font-size: 1.5em;
 		font-weight: 900;
 	}
-	@media (max-width:800px) {
-		#wrapper,
-		.slide {
-			width: 100%;
-		}
-	}
-	@media (max-width:500px) {
-		#wrapper {
-			width: 100%;
-		}
-	}
+
 	/*RED SHADED RAMP*/
 	.red1 {
 		fill: #F2AC93;
@@ -429,5 +423,11 @@ h2 {
 	.c3-chart-arc .c3-gauge-value {
 		fill: #000;
 		/*  font-size: 28px !important;*/
+	}
+}
+
+@media (max-width:800px) {
+	#wrapper, .slide {
+		width: 100%;
 	}
 }
