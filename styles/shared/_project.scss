@@ -21,6 +21,18 @@ section.container-lg {
 	max-width: 700px !important;
 }
 
+.state-groups rect, .state rect  {
+	fill: #aaa !important;
+  	pointer-events:none !important;
+	color:#333333 !important;
+}
+
+.state-groups text {
+	color:#333333 !important;
+	pointer-events:none !important;
+	font-size:0.6em !important;
+}
+
 p {
 	max-width: 520px;
 	font-size: 15px;
@@ -146,6 +158,10 @@ h2 {
 		font-weight: 900;
 	}
 
+	text {
+		font-family: "Benton Sans", Helvetica, Arial, sans-serif !important;
+	}
+	
 	/*RED SHADED RAMP*/
 	.red1 {
 		fill: #F2AC93;
