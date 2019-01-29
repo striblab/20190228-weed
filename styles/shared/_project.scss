@@ -24,13 +24,21 @@ section.container-lg {
 .state-groups rect, .state rect  {
 	fill: #aaa !important;
   	pointer-events:none !important;
-	color:#333333 !important;
+	color:#ffffff !important;
 }
 
 .state-groups text {
-	color:#333333 !important;
+	color:#ffffff !important;
+	fill:#ffffff !important;
 	pointer-events:none !important;
 	font-size:0.6em !important;
+}
+
+.legend_block {
+	margin-left:auto;
+	margin-right:auto;
+	width:520px;
+	text-align:center;
 }
 
 p {
@@ -227,23 +235,23 @@ h2 {
 	}
 	/*GREEN SHADED RAMP*/
 	.green1 {
-		fill: #C7E5B5;
+		fill: #C7E5B5 !important;
 		background-color: #C7E5B5;
 	}
 	.green2 {
-		fill: #9EE384;
+		fill: #9EE384 !important;
 		background-color: #9EE384;
 	}
 	.green3 {
-		fill: #5BBF48;
+		fill: #5BBF48 !important;
 		background-color: #5BBF48;
 	}
 	.green4 {
-		fill: #299E3D;
+		fill: #299E3D !important;
 		background-color: #299E3D;
 	}
 	.green5 {
-		fill: #118241;
+		fill: #118241 !important;
 		background-color: #118241;
 	}
 	/*GREY SHADED RAMP*/
@@ -443,7 +451,7 @@ h2 {
 }
 
 @media (max-width:800px) {
-	#wrapper, .slide {
+	#wrapper, .slide, .legend_block {
 		width: 100%;
 	}
 }
