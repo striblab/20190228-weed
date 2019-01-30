@@ -113,6 +113,20 @@ h2 {
 	stroke: #333;
 }
 
+.point {
+	display:inline-block;
+	width:48%;
+	font-size:0.8em;
+	margin-bottom:10px;
+	text-align:center;
+	vertical-align:top;
+}
+
+.icon img {
+	width:80px;
+	height:80px;
+}
+
 .slide {
 	width: 520px;
 	margin-left: auto;
