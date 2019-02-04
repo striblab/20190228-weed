@@ -1,7 +1,7 @@
 import * as d3 from 'd3';
 import * as c3 from 'c3';
 
-class Chart {
+class PollChart {
 
     constructor(target) {
         this.target = target;
@@ -107,6 +107,6 @@ class Chart {
 }
 
 export {
-    Chart as
+    PollChart as
     default
 }

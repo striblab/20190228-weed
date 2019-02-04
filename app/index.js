@@ -52,8 +52,18 @@ utils.environmentNoting();
 // });
 
 import * as d3 from 'd3';
-import * as c3 from 'c3';
 
+import PollChart from './polls.js';
+import RaceChart from './race_chart.js';
+import CrimeChart from './crime_chart.js';
+
+const chartPoll = new PollChart('#chartPoll');
+const chartRace = new RaceChart("#chartRace");
+const chartCrime = new CrimeChart("#chartCrime");
+
+chartPoll.render();
+chartRace.render();
+chartCrime.render();
 
 var aspect = 550 / 400, chart = $("#carto1 svg");
 $(window).on("resize", function() {   
