@@ -52,7 +52,7 @@ class CrimeChart {
                 }
             },
             color: {
-                pattern: ['#3580A3']
+                pattern: ['#5BBF48']
             },
             axis: {
                 rotated: true,

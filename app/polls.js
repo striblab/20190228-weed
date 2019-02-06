@@ -25,7 +25,7 @@ class PollChart {
                 columns: [
                     ['Source',0.049019608,0.019896194,0.324394464,0.606689735]
                 ],
-                type: 'bar',
+                type: 'line',
                 labels: {
                     format: {
                         'Source': d3.format('.0%')
@@ -52,10 +52,10 @@ class PollChart {
                 }
             },
             color: {
-                pattern: ['#3580A3']
+                pattern: ['#5BBF48']
             },
             axis: {
-                rotated: true,
+                // rotated: true,
                 y: {
                     max: 1,
                     min: 0, 
