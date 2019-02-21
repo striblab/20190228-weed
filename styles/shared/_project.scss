@@ -39,6 +39,7 @@ section.container-lg {
 	margin-right:auto;
 	width:520px;
 	text-align:center;
+	font-size:0.6em;
 }
 
 p {
@@ -285,7 +286,7 @@ h2 {
 		background-color: #969696;
 	}
 	.gray4 {
-		fill: #636363;
+		fill: #636363 !important;
 		background-color: #636363;
 		color: #fff;
 	}
@@ -470,5 +471,8 @@ h2 {
 @media (max-width:800px) {
 	#wrapper, .slide, .legend_block {
 		width: 100%;
+	}
+	.legendary {
+		font-size:0.9am !important;
 	}
 }

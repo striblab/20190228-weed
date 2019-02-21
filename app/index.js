@@ -56,14 +56,17 @@ import * as d3 from 'd3';
 import PollChart from './polls.js';
 import RaceChart from './race_chart.js';
 import CrimeChart from './crime_chart.js';
+import RevenueChart from './revenue_chart.js';
 
 const chartPoll = new PollChart('#chartPoll');
 const chartRace = new RaceChart("#chartRace");
 const chartCrime = new CrimeChart("#chartCrime");
+const chartRevenue = new RevenueChart("#chartRevenue");
 
 chartPoll.render();
 chartRace.render();
 chartCrime.render();
+chartRevenue.render();
 
 var aspect = 550 / 400, chart = $("#carto1 svg");
 $(window).on("resize", function() {   
@@ -115,14 +118,23 @@ $(window).on("load", function() {
             })
             .attr('class', 'state')
             .attr('class', function(d) {
-                if (d.state_postal == "MN" || d.state_postal == "SD" || d.state_postal == "MT" || d.state_postal == "UT" || d.state_postal == "HI" || d.state_postal == "AZ"  || d.state_postal == "NM" || d.state_postal == "OK" || d.state_postal == "MO" || d.state_postal == "AR" || d.state_postal == "LA" || d.state_postal == "FL" || d.state_postal == "OH" || d.state_postal == "WV" || d.state_postal == "PA" || d.state_postal == "NY" || d.state_postal == "NJ" || d.state_postal == "RI" || d.state_postal == "NH") {
-                    console.log("ghit");
+                //rec sales
+                if (d.state_postal == "AK" || d.state_postal == "CA" || d.state_postal == "CO" || d.state_postal == "MA" || d.state_postal == "NV" || d.state_postal == "OR"  || d.state_postal == "WA") {
                     return "green5";
                 }
-                else if (d.state_postal == "WA" || d.state_postal == "CA" || d.state_postal == "OR" || d.state_postal == "NV" || d.state_postal == "CO" || d.state_postal == "AK"  || d.state_postal == "MI" || d.state_postal == "VT"  || d.state_postal == "MA"  || d.state_postal == "ME") {
+                //rec use
+                else if (d.state_postal == "DC" || d.state_postal == "ME" || d.state_postal == "MI" || d.state_postal == "VT") {
                     return "green3";
+                } 
+                //medical
+                else if (d.state_postal == "AZ" || d.state_postal == "AR" || d.state_postal == "CT" || d.state_postal == "DE" || d.state_postal == "FL" || d.state_postal == "HI"  || d.state_postal == "IL" || d.state_postal == "LA"  || d.state_postal == "MD"  || d.state_postal == "MN"  || d.state_postal == "MO"   || d.state_postal == "MT"  || d.state_postal == "NH"  || d.state_postal == "NY"  || d.state_postal == "ND"  || d.state_postal == "OH"  || d.state_postal == "OK"  || d.state_postal == "PA"  || d.state_postal == "RI"  || d.state_postal == "UT"  || d.state_postal == "WV") {
+                    return "green1";
+                } 
+                //medical oils
+                else if (d.state_postal == "AL" || d.state_postal == "GA" || d.state_postal == "IN" || d.state_postal == "IA" || d.state_postal == "KY" || d.state_postal == "MS"  || d.state_postal == "NC" || d.state_postal == "SC"  || d.state_postal == "TN"  || d.state_postal == "TX"  || d.state_postal == "VA"  || d.state_postal == "WY") {
+                    return "gray4";
                 }
-               else { return "gray3"; }
+               else { return "gray2"; }
             })
             .attr('rx', 0)
             .attr('ry', 0)

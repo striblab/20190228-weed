@@ -1,7 +1,7 @@
 <div class="strib-styles ssa ssb ssc">
   <section class="container-lg elex-header">
       <h5 class="font-popular-light"><span class="font-popular-medium"></span></h5>
-      <h1>Marijuana's changing landscape in Minnesota</h1>
+      <h1>Marijuana's changing landscape</h1>
       <p class="byline">By <a href="http://www.startribune.com/jeff-hargarten/274254381/">Jeff Hargarten</a> and <a href="http://www.startribune.com/matt-delong/285386351/">Matt DeLong</a> • <span>Star Tribune</span></p> 
       <!-- <div class="article-dateline"><time pubdate datetime="2018-10-25T16:00:00">December 31, 2018</time></div> -->
     </section>
@@ -13,7 +13,7 @@
 
         <p>Gov. Tim Walz has expressed openness to legalizing marijuana for recreational use, following the lead of states like Colorado, Washington, Oregon, California and others. </p>
 
-        <p>The state of marijuana in Minnesota is complex and contradictory. On one hand, cannabis has been decriminalized for small doses in Minnesota since the 1970s and available as a treatment for terminal medical conditions since 2015. On the other hand, large racial disparities in enforcement persist statewide and the medical availability of marijuana-based treatments is among the country's most restrictive.</p>
+        <p>Marijuana's legal status in Minnesota is complex. On one hand, cannabis has been decriminalized for small doses in Minnesota since the 1970s and available as a treatment for terminal medical conditions since 2015. On the other hand, large racial disparities in enforcement persist statewide and the medical availability of marijuana-based treatments is among the country's most restrictive.</p>
 
         <p>Here's a rundown of where Minnesota stands on marijuana's legality:</p>
     </section>
@@ -21,13 +21,23 @@
     <div class="rule"></div>
     <section class="container-lg">
         <h2 class="chartTitle">The greening of America</h2>
-        <p>More than half the country has legalized marijuana in some form, with a growing number making it available for recreational sales from licensed businesses. Since marijuana is still federally considered a prohibited Schedule One drug, those businesses face various operational challenges. But to states, the additional tax revenue has been a boon for local budgets.</p>
+        <p>More than half the country has legalized marijuana in some form. Several others have made cannabis-based oils available to treat various medical conditions. A growing number have allowed marijuana to be sold for recreational use from licensed businesses.</p>
     </section>
     <div class="slide">
         <div id="carto1"><svg width="550" height="400" viewBox="0 0 440 300" preserveAspectRatio="xMidYMid"></svg></div>
-        <div class="legend_block"><span class="legendary gray3">Illegal</span> <span class="legendary green5">Medical Legal</span> <span class="legendary green3">Recreational Legal</span></div>
+        <div class="legend_block"><span class="legendary gray2">Illegal</span> <span class="legendary gray4">CBD Oil Legal</span> <span class="legendary green1">Medical Use</span> <span class="legendary green3">Recreational Use</span> <span class="legendary green5">Recreational Sales</span> *Decriminalized</div>
         <!-- <span>*Decriminalized</span> <span class="legendary gray5">Medical Oils Legal</span> -->
-        <div class="byline">Source: <a href="http://www.governing.com/gov-data/safety-justice/state-marijuana-laws-map-medical-recreational.html" target="new_">Governing</a> | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a></div>
+        <div class="byline">Source: Star Tribune reporting | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a></div>
+    </div>
+
+    <div class="rule"></div>
+    <section class="container-lg">
+        <h2 class="chartTitle">Growing revenue</h2>
+        <p>To states that have legalized marijuana for recreational sales, the additional <span class="legendary green3">tax revenue</span> has been a boon for local budgets. Though since marijuana is still federally considered a prohibited Schedule One drug, legal businesses selling cannabis face various operational challenges.</p>
+    </section>
+    <div class="slide">
+        <div class='chart' id="chartRevenue"></div>
+        <div class="byline">Source: Star Tribune reporting | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a></div>
     </div>
 
     <div class="rule"></div>
@@ -41,23 +51,23 @@
         <div class='map' id="mnMap">
             <div id="icons">
                 <div class="point">
-                    <div class="icon"><img src="./img/dispensary.png"></div>
+                    <div class=""><img src="./img/dispensary.png" width="100" height="80" alt= "dispensary" /></div>
                     <div class="factoid">12 marijuana dispensaries statewide</div>
                 </div>
                 <div class="point">
-                    <div class="icon"><img src="./img/nosmoking.png"></div>
+                    <div class="icon"><img src="./img/nosmoking.png" alt= "nosmoke" /></div>
                     <div class="factoid">No cannabis smoking allowed</div>
                 </div>
                 <div class="point">
-                    <div class="icon"><img src="./img/vaporizer.png"></div>
+                    <div class="icon"><img src="./img/vaporizer.png" alt= "vaporizer" /></div>
                     <div class="factoid">Liquids, oils and non-leaf vapors allowed</div>
                 </div>
                 <div class="point">
-                    <div class="icon"><img src="./img/leaf.png"></div>
+                    <div class="icon"><img src="./img/leaf.png" alt= "leaf" /></div>
                     <div class="factoid">Pill consumption allowed</div>
                 </div>
                 <div class="point">
-                    <div class="icon"><img src="./img/cross.png"></div>
+                    <div class="icon"><img src="./img/cross.png" alt= "medical" /></div>
                     <div class="factoid">Only for the terminally, seriously or chronically ill</div>
                 </div>
                 <div class="point">
@@ -68,7 +78,7 @@
         <div class="byline">Source:  Minnesota Office of the Revisor of Statutes, Minnesota Department of Health | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a></div>
     </div>
     <section class="container-lg">
-            <p>Cannabis-based treatments are only legally available from eight licensed dispensaries serving all of Minnesota's 87 counties.</p>
+            <p>Cannabis-based treatments are only legally available from twelve licensed dispensaries serving all of Minnesota's 87 counties.</p>
 
             <p>Recreationally, small amounts of marijuana in personal possession have been decriminalized in Minnesota since 1976. Any weight less 42.5 grams or less is a petty misdemeanor on first offense, while future offenses are considered felonies.</p>
         </section>
@@ -76,17 +86,17 @@
     <div class="rule"></div>
     <section class="container-lg">
         <h2 class="chartTitle">Changing attitudes</h2>
-        <p>The sky calls to us invent the universe ship of the imagination paroxysm of global death colonies vanquish the impossible. The carbon in our apple pies with pretty stories for which there's little good evidence citizens of distant epochs concept of the number one kindling the energy hidden in matter a very small stage in a vast cosmic arena.</p>
+        <p>While acceptance of legalized marijuana has gradually increased <span class="legendary green3">nationwide</span> over the decade, support in the <span class="legendary green2">midwest</span> has grown more inconsistently, yet still jumped about 25 points from 2009 to 2018.</p>
     </section>
     <div class="slide">
         <div class='chart' id="chartPoll"></div>
-        <div class="byline">Source: Minnesota Supreme Court | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a></div>
+        <div class="byline">Source: <a href="https://news.gallup.com/poll/243908/two-three-americans-support-legalizing-marijuana.aspx" target="new_">Gallup</a> | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a></div>
     </div>
 
     <div class="rule"></div>
     <section class="container-lg">
-        <h2 class="chartTitle">Changing enforcement</h2>
-        <p>The sky calls to us invent the universe ship of the imagination paroxysm of global death colonies vanquish the impossible. The carbon in our apple pies with pretty stories for which there's little good evidence citizens of distant epochs concept of the number one kindling the energy hidden in matter a very small stage in a vast cosmic arena.</p>
+        <h2 class="chartTitle">Continued enforcement</h2>
+        <p>The number of <span class="legendary gray5">marijuana convictions</span> in Minnesota have continued to rise in the last several years.</p>
     </section>
     <div class="slide">
         <div class='chart' id="chartCrime"></div>
@@ -96,7 +106,7 @@
     <div class="rule"></div>
     <section class="container-lg">
         <h2 class="chartTitle">Continuing racial disparities</h2>
-        <p>The sky calls to us invent the universe ship of the imagination paroxysm of global death colonies vanquish the impossible. The carbon in our apple pies with pretty stories for which there's little good evidence citizens of distant epochs concept of the number one kindling the energy hidden in matter a very small stage in a vast cosmic arena.</p>
+        <p>Blacks and Native Americans represent disproportionate percentages of <span class="legendary gray5">cannabis cases filed</span> in Minnesota relative to their overall <span class="legendary gray3">percentage of the population</span>, while whites are under-represented.</p>
     </section>
     <div class="slide">
         <div class='chart' id="chartRace"></div>

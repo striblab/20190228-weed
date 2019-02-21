@@ -1,7 +1,7 @@
 import * as d3 from 'd3';
 import * as c3 from 'c3';
 
-class RaceChart {
+class RevenueChart {
 
     constructor(target) {
         this.target = target;
@@ -15,7 +15,7 @@ class RaceChart {
             top: 20,
             right: 40,
             bottom: 20,
-            left: 120,
+            left: 60,
         };
 
         self.chartCounts = c3.generate({
@@ -23,14 +23,12 @@ class RaceChart {
             padding: padding,
             data: {
                 columns: [
-                    ['Population',0.82,0.06,0.05,0.01,0.05,0.02],
-                    ['Cases',0.57,0.17,0.05,0.06,0.02,0.13]
+                    ['Revenue',2,2,2,2,2,2,2]
                 ],
                 type: 'bar',
                 labels: {
                     format: {
-                        'Population': d3.format('.0%'),
-                        'Cases': d3.format('.0%')
+                        'Revenue': d3.format('$,')
                     }
                 },
                 line: {
@@ -54,12 +52,12 @@ class RaceChart {
                 }
             },
             color: {
-                pattern: ['#999999','#333333']
+                pattern: ['#5BBF48']
             },
             axis: {
                 rotated: true,
                 y: {
-                    max: 1,
+                    max: 100,
                     min: 0, 
                     padding: {
                         bottom: 0,
@@ -67,8 +65,8 @@ class RaceChart {
                     },
                     tick: {
                         count: 4,
-                        values: [0, 0.25, 0.50, 0.75, 1],
-                        format: d3.format('.0%')
+                        values: [0, 25, 50, 75, 100],
+                        format: d3.format('$,')
                     }
                 },
                 x: {
@@ -77,7 +75,7 @@ class RaceChart {
                         left: 0
                     },
                     type: 'category',
-                    categories: ['White','Black','Hispanic','Native','Asian','Other'],
+                    categories: ['WA','OR','CA','AK','NV','CO','MA'],
                     tick: {
                         multiline: false
                     }
@@ -86,16 +84,16 @@ class RaceChart {
             grid: {
                 focus: {
                     show: false
-                },
-                y: {
-                    lines: [{
-                        value: 0.5,
-                        text: '',
-                        position: 'start',
-                        class: 'powerline'
-                    }]
-
                 }
+                // y: {
+                //     lines: [{
+                //         value: 0.5,
+                //         text: '',
+                //         position: 'start',
+                //         class: 'powerline'
+                //     }]
+
+                // }
             },
             tooltip: {
                 contents: function(d, defaultTitleFormat, defaultValueFormat, color) {
@@ -105,14 +103,10 @@ class RaceChart {
             }
         });
 
-        d3.selectAll(".c3-target-Cases")
-        .selectAll(".c3-bar, .c3-texts")
-        .attr("transform", "translate(0, 3)");
-
     }
 }
 
 export {
-    RaceChart as
+    RevenueChart as
     default
 }

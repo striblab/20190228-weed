@@ -29,3 +29,71 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
   // Split your styles into multiple files so its easier to understand and change
   @import 'shared/_project';
 }
+
+.legendary {
+  padding: 4px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  font-family: 'Benton Sans';
+  padding: 0 7px;
+  margin-bottom: 3px;
+  display: inline-block;
+}
+
+	/*GREEN SHADED RAMP*/
+	.green1 {
+		fill: #C7E5B5 !important;
+		background-color: #C7E5B5;
+	}
+	.green2 {
+		fill: #9EE384 !important;
+		background-color: #9EE384;
+	}
+	.green3 {
+		fill: #5BBF48 !important;
+		background-color: #5BBF48;
+	}
+	.green4 {
+		fill: #299E3D !important;
+		background-color: #299E3D;
+	}
+	.green5 {
+		fill: #118241 !important;
+		background-color: #118241;
+  }
+
+	.gray1 {
+		fill: #ddd;
+		background-color: #ddd;
+	}
+	.gray2 {
+		fill: #CCC;
+		background-color: #CCC;
+	}
+	.gray3 {
+		fill: #969696;
+		background-color: #969696;
+	}
+	.gray4 {
+		fill: #636363 !important;
+		background-color: #636363;
+		color: #fff;
+	}
+	.gray5 {
+		fill: #333333;
+		background-color: #333333;
+		color: #fff;
+	}
+  
+  .chart, .overlay {
+    pointer-events:none !important;
+  }
+
+  #chartPoll {
+    pointer-events:all !important;
+  }
+
+  .c3-tooltip-container {
+    font-size:0.8em !important;
+}

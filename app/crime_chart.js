@@ -15,20 +15,22 @@ class CrimeChart {
             top: 20,
             right: 40,
             bottom: 20,
-            left: 120,
+            left: 60,
         };
 
         self.chartCounts = c3.generate({
             bindto: self.target,
             padding: padding,
             data: {
+                x: 'x',
                 columns: [
-                    ['Source',0.049019608,0.019896194,0.324394464,0.606689735]
+                    ['x',2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019],
+                    ['Convictions',null,4098,4310,4321,4518,5047,null,null,null,null]
                 ],
-                type: 'bar',
+                type: 'area',
                 labels: {
                     format: {
-                        'Source': d3.format('.0%')
+                        'Convictions': d3.format(',')
                     }
                 },
                 line: {
@@ -52,12 +54,12 @@ class CrimeChart {
                 }
             },
             color: {
-                pattern: ['#5BBF48']
+                pattern: ['#333333','#5BBF48']
             },
             axis: {
                 rotated: true,
                 y: {
-                    max: 1,
+                    max: 6000,
                     min: 0, 
                     padding: {
                         bottom: 0,
@@ -65,8 +67,8 @@ class CrimeChart {
                     },
                     tick: {
                         count: 4,
-                        values: [0, 0.25, 0.50, 0.75, 1],
-                        format: d3.format('.0%')
+                        values: [0,2000,4000,6000],
+                        format: d3.format(',')
                     }
                 },
                 x: {
@@ -74,8 +76,7 @@ class CrimeChart {
                         right: 0,
                         left: 0
                     },
-                    type: 'category',
-                    categories: ['Shooting','Shooting Report Only','ShotSpotter Activation','Sound of Shots Fired'],
+
                     tick: {
                         multiline: false
                     }
@@ -97,8 +98,15 @@ class CrimeChart {
             },
             tooltip: {
                 contents: function(d, defaultTitleFormat, defaultValueFormat, color) {
-                    return '<div class="chart-tooltip gray5"><span class="tooltip-label">' + d[0].x + ':</span>' +
-                        '<span class="tooltip-value">' + defaultValueFormat(d[0].value) + '</span></div>'
+                    var tipThread = '<div class="chart-tooltip gray3"><span class="tooltip-label">' + d[0].x + '</span></div>';
+
+                    if (d[0].value != null) {
+                        tipThread = tipThread + '<div class="chart-tooltip gray5"><span class="tooltip-label">National:</span><span class="tooltip-value">' + defaultValueFormat(d[0].value) + '</span></div>';
+                    }
+                    if (d[1].value != null) {
+                        tipThread = tipThread + '<div class="chart-tooltip green3"><span class="tooltip-label">Midwest:</span><span class="tooltip-value">' + defaultValueFormat(d[1].value) + '</span></div>';
+                    }
+                    return tipThread;
                 }
             }
         });

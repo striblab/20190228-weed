@@ -15,20 +15,23 @@ class PollChart {
             top: 20,
             right: 40,
             bottom: 20,
-            left: 120,
+            left: 60,
         };
 
         self.chartCounts = c3.generate({
             bindto: self.target,
             padding: padding,
             data: {
+                x: 'x',
                 columns: [
-                    ['Source',0.049019608,0.019896194,0.324394464,0.606689735]
+                    ['x',2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019],
+                    ['US',0.31,null,null,0.34,null,0.36,null,null,null,null,0.46,null,0.48,0.58,0.51,0.58,null,0.64,0.66,null],
+                    ['Midwest',null,null,null,null,null,null,null,null,null,0.4,0.41,0.54,0.44,0.58,0.45,null,null,null,0.65,null]
                 ],
                 type: 'line',
                 labels: {
                     format: {
-                        'Source': d3.format('.0%')
+                        // 'Source': d3.format('.0%')
                     }
                 },
                 line: {
@@ -52,7 +55,7 @@ class PollChart {
                 }
             },
             color: {
-                pattern: ['#5BBF48']
+                pattern: ['#5BBF48','#C7E5B5']
             },
             axis: {
                 // rotated: true,
@@ -74,8 +77,7 @@ class PollChart {
                         right: 0,
                         left: 0
                     },
-                    type: 'category',
-                    categories: ['Shooting','Shooting Report Only','ShotSpotter Activation','Sound of Shots Fired'],
+
                     tick: {
                         multiline: false
                     }
@@ -97,8 +99,15 @@ class PollChart {
             },
             tooltip: {
                 contents: function(d, defaultTitleFormat, defaultValueFormat, color) {
-                    return '<div class="chart-tooltip gray5"><span class="tooltip-label">' + d[0].x + ':</span>' +
-                        '<span class="tooltip-value">' + defaultValueFormat(d[0].value) + '</span></div>'
+                    var tipThread = '<div class="chart-tooltip gray3"><span class="tooltip-label">' + d[0].x + '</span></div>';
+
+                    if (d[0].value != null) {
+                        tipThread = tipThread + '<div class="chart-tooltip green3"><span class="tooltip-label">National:</span><span class="tooltip-value">' + defaultValueFormat(d[0].value) + '</span></div>';
+                    }
+                    if (d[1].value != null) {
+                        tipThread = tipThread + '<div class="chart-tooltip green2"><span class="tooltip-label">Midwest:</span><span class="tooltip-value">' + defaultValueFormat(d[1].value) + '</span></div>';
+                    }
+                    return tipThread;
                 }
             }
         });
