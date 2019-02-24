@@ -8,8 +8,18 @@ class RevenueChart {
         this.chartCounts = null;
     }
 
-    render() {
+    render(type) {
         var self = this;
+        var states;
+        var totals;
+
+        if (type == 'med') {
+            states = ['AZ','IL','RI','NM','CT','NY','NJ','MT','FL','HI','MN','NH','DE'];
+            totals = ['Revenue',406.7,91.1,60.2,54.2,50,40.9,37,31.8,17.4,17.2,9.6,7.2,7.1];
+        } else {
+            states = ['CA','CO','WA','OR','ME','MA','NV','AK','MI','DC'];
+            totals = ['Revenue',2750,1560,1000,777.6,633,106,102.7,39.5,83.4,17.7];
+        }
 
         var padding = {
             top: 20,
@@ -23,7 +33,7 @@ class RevenueChart {
             padding: padding,
             data: {
                 columns: [
-                    ['Revenue',2,2,2,2,2,2,2]
+                    totals
                 ],
                 type: 'bar',
                 labels: {
@@ -57,7 +67,7 @@ class RevenueChart {
             axis: {
                 rotated: true,
                 y: {
-                    max: 100,
+                    max: 3000,
                     min: 0, 
                     padding: {
                         bottom: 0,
@@ -65,7 +75,7 @@ class RevenueChart {
                     },
                     tick: {
                         count: 4,
-                        values: [0, 25, 50, 75, 100],
+                        values: [0, 1000, 2000, 3000],
                         format: d3.format('$,')
                     }
                 },
@@ -75,7 +85,7 @@ class RevenueChart {
                         left: 0
                     },
                     type: 'category',
-                    categories: ['WA','OR','CA','AK','NV','CO','MA'],
+                    categories: states,
                     tick: {
                         multiline: false
                     }
