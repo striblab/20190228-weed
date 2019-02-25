@@ -31,14 +31,15 @@ section.container-lg {
 	color:#ffffff !important;
 	fill:#ffffff !important;
 	pointer-events:none !important;
-	font-size:0.6em !important;
+	font-size:0.4em !important;
+	font-weight:bold;
 }
 
 .legend_block {
 	margin-left:auto;
 	margin-right:auto;
 	width:520px;
-	text-align:center;
+	text-align:left;
 	font-size:0.6em;
 }
 
@@ -146,6 +147,9 @@ h2 {
 		padding-bottom: 10px;
 		text-align: left;
 	}
+	#chartRevenueM {
+		height:400px;
+	}
 	.chart {
 		height:300px;
 	}
@@ -155,6 +159,10 @@ h2 {
 	.chart .c3-line {
 		stroke-width: 6px !important;
 	}
+	#chartCrime .c3-area {
+		opacity: 1 !important;
+	  }
+	  
 	.chart-tooltip {
 		background-color: rgba(0, 0, 0, 0.8);
 		color: #FFFFFF;
@@ -274,8 +282,9 @@ h2 {
 	}
 	/*GREY SHADED RAMP*/
 	.gray1 {
-		fill: #ddd;
-		background-color: #ddd;
+		fill: #ffffff;
+		background-color: #ffffff;
+		color:#000000;
 	}
 	.gray2 {
 		fill: #CCC;

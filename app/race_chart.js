@@ -54,7 +54,7 @@ class RaceChart {
                 }
             },
             color: {
-                pattern: ['#999999','#333333']
+                pattern: ['#CCCCCC','#636363']
             },
             axis: {
                 rotated: true,

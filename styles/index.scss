@@ -92,7 +92,11 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
 
   #chartPoll {
     pointer-events:all !important;
-  }
+	}
+	
+	#chartCrime { 
+		pointer-events:all !important;
+	}
 
   .c3-tooltip-container {
     font-size:0.8em !important;
