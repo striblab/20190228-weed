@@ -162,6 +162,9 @@ h2 {
 	#chartCrime .c3-area {
 		opacity: 1 !important;
 	  }
+	#chartCrime .c3-line {
+		stroke-width: 3px !important;
+	}
 	  
 	.chart-tooltip {
 		background-color: rgba(0, 0, 0, 0.8);

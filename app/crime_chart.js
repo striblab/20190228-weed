@@ -25,9 +25,9 @@ class CrimeChart {
                 x: 'x',
                 columns: [
                     ['x',2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019],
-                    ['Convictions',11366,11399,11153,11829,12044,12051,11541,11566,8693,5224,9500,null,null]
+                    ['Convictions',11366,11399,11153,11872,12043,11969,11650,11590,8638,8856,9495,null,null]
                 ],
-                type: 'line',
+                type: 'area',
                 labels: {
                     // format: {
                     //     'Convictions': d3.format(',')
@@ -47,9 +47,9 @@ class CrimeChart {
                 show: true,
                 r: function(d) {
                     if (d.x == 2017) {
-                        return 6;
+                        return 1;
                     } else {
-                        return 2;
+                        return 1;
                     }
                 }
             },
