@@ -159,10 +159,10 @@ h2 {
 	.chart .c3-line {
 		stroke-width: 6px !important;
 	}
-	#chartCrime .c3-area {
+	#chartCrime .c3-area, #chartConvict .c3-area {
 		opacity: 1 !important;
 	  }
-	#chartCrime .c3-line {
+	#chartCrime .c3-line, #chartConvict .c3-line {
 		stroke-width: 3px !important;
 	}
 	  

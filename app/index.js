@@ -56,17 +56,20 @@ import * as d3 from 'd3';
 import PollChart from './polls.js';
 import RaceChart from './race_chart.js';
 import CrimeChart from './crime_chart.js';
+import ConvictChart from './convict_chart.js';
 import RevenueChart from './revenue_chart.js';
 
 const chartPoll = new PollChart('#chartPoll');
 const chartRace = new RaceChart("#chartRace");
 const chartCrime = new CrimeChart("#chartCrime");
+const chartConvict = new ConvictChart("#chartConvict");
 const chartRevenue = new RevenueChart("#chartRevenue");
 const chartRevenueM = new RevenueChart("#chartRevenueM");
 
 chartPoll.render();
 chartRace.render();
 chartCrime.render();
+chartConvict.render();
 chartRevenue.render('rec');
 chartRevenueM.render('med');
 
