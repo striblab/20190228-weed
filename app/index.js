@@ -132,14 +132,14 @@ $(window).on("load", function() {
                     return "green3";
                 } 
                 //medical
-                else if (d.state_postal == "AZ" || d.state_postal == "AR" || d.state_postal == "CT" || d.state_postal == "DE" || d.state_postal == "FL" || d.state_postal == "HI"  || d.state_postal == "IL" || d.state_postal == "LA"  || d.state_postal == "MD"  || d.state_postal == "MN"  || d.state_postal == "MO"   || d.state_postal == "MT"  || d.state_postal == "NH"  || d.state_postal == "NY"  || d.state_postal == "ND"  || d.state_postal == "OH"  || d.state_postal == "OK"  || d.state_postal == "PA"  || d.state_postal == "RI"  || d.state_postal == "UT"  || d.state_postal == "WV") {
+                else if (d.state_postal == "AZ" || d.state_postal == "AR" || d.state_postal == "CT" || d.state_postal == "DE" || d.state_postal == "FL" || d.state_postal == "HI"  || d.state_postal == "IL" || d.state_postal == "LA"  || d.state_postal == "MD"  || d.state_postal == "MN"  || d.state_postal == "MO"   || d.state_postal == "MT"  || d.state_postal == "NM" || d.state_postal == "NH"  || d.state_postal == "NY"  || d.state_postal == "ND"  || d.state_postal == "OH"  || d.state_postal == "OK"  || d.state_postal == "PA"  || d.state_postal == "RI"  || d.state_postal == "UT"  || d.state_postal == "WV") {
                     return "green1";
                 } 
                 //medical oils
                 else if (d.state_postal == "AL" || d.state_postal == "GA" || d.state_postal == "IN" || d.state_postal == "IA" || d.state_postal == "KY" || d.state_postal == "MS"  || d.state_postal == "NC" || d.state_postal == "SC"  || d.state_postal == "TN"  || d.state_postal == "TX"  || d.state_postal == "VA"  || d.state_postal == "WY") {
                     return "gray4";
                 }
-               else { return "gray2"; }
+               else { return "purple3"; }
             })
             .attr('rx', 0)
             .attr('ry', 0)
@@ -188,23 +188,23 @@ $(window).on("load", function() {
     {'state_full':'Georgia','state_postal':'GA','row':5,'column':7,'mark':''},
     {'state_full':'Hawaii','state_postal':'HI','row':6,'column':-1,'mark':''},
     {'state_full':'Idaho','state_postal':'ID','row':1,'column':1,'mark':''},
-    {'state_full':'Illinois','state_postal':'IL','row':1,'column':6,'mark':''},
+    {'state_full':'Illinois','state_postal':'IL','row':1,'column':6,'mark':'*'},
     {'state_full':'Indiana','state_postal':'IN','row':2,'column':5,'mark':''},
     {'state_full':'Iowa','state_postal':'IA','row':2,'column':4,'mark':''},
     {'state_full':'Kansas','state_postal':'KS','row':4,'column':3,'mark':''},
     {'state_full':'Kentucky','state_postal':'KY','row':3,'column':5,'mark':''},
     {'state_full':'Louisiana','state_postal':'LA','row':5,'column':4,'mark':''},
     {'state_full':'Maine','state_postal':'ME','row':-1,'column':10,'mark':''},
-    {'state_full':'Maryland','state_postal':'MD','row':3,'column':8,'mark':''},
+    {'state_full':'Maryland','state_postal':'MD','row':3,'column':8,'mark':'*'},
     {'state_full':'Massachusetts','state_postal':'MA','row':1,'column':9,'mark':'*'},
     {'state_full':'Michigan','state_postal':'MI','row':1,'column':7,'mark':''},
     {'state_full':'Minnesota','state_postal':'MN','row':1,'column':4,'mark':'*'},
     {'state_full':'Mississippi','state_postal':'MS','row':5,'column':5,'mark':'*'},
-    {'state_full':'Missouri','state_postal':'MO','row':3,'column':4,'mark':''},
+    {'state_full':'Missouri','state_postal':'MO','row':3,'column':4,'mark':'*'},
     {'state_full':'Montana','state_postal':'MT','row':1,'column':2,'mark':''},
     {'state_full':'Nebraska','state_postal':'NE','row':3,'column':3,'mark':'*'},
     {'state_full':'Nevada','state_postal':'NV','row':2,'column':1,'mark':''},
-    {'state_full':'New Hampshire','state_postal':'NH','row':0,'column':10,'mark':''},
+    {'state_full':'New Hampshire','state_postal':'NH','row':0,'column':10,'mark':'*'},
     {'state_full':'New Jersey','state_postal':'NJ','row':2,'column':8,'mark':''},
     {'state_full':'New Mexico','state_postal':'NM','row':4,'column':2,'mark':''},
     {'state_full':'New York','state_postal':'NY','row':1,'column':8,'mark':'*'},

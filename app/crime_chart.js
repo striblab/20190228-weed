@@ -54,7 +54,7 @@ class CrimeChart {
                 }
             },
             color: {
-                pattern: ['#636363']
+                pattern: ['#857AAA']
             },
             axis: {
                 // rotated: true,
@@ -98,7 +98,7 @@ class CrimeChart {
             },
             tooltip: {
                 contents: function(d, defaultTitleFormat, defaultValueFormat, color) {
-                    var tipThread = '<div class="chart-tooltip gray3"><span class="tooltip-label">' + d[0].x + ':</span><span class="tooltip-value">' + defaultValueFormat(d[0].value) + '</span></div>';
+                    var tipThread = '<div class="chart-tooltip gray5"><span class="tooltip-label">' + d[0].x + ':</span><span class="tooltip-value">' + defaultValueFormat(d[0].value) + '</span></div>';
 
                     return tipThread;
                 }

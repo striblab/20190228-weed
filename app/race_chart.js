@@ -23,8 +23,8 @@ class RaceChart {
             padding: padding,
             data: {
                 columns: [
-                    ['Population',0.82,0.06,0.05,0.01,0.05,0.02],
-                    ['Cases',0.57,0.17,0.05,0.06,0.02,0.13]
+                    ['Population',0.84,0.07,0.05,0.01,0.05],
+                    ['Cases',0.55,0.24,0.05,0.10,0.06]
                 ],
                 type: 'bar',
                 labels: {
@@ -54,7 +54,7 @@ class RaceChart {
                 }
             },
             color: {
-                pattern: ['#CCCCCC','#636363']
+                pattern: ['#CCCCCC','#857AAA']
             },
             axis: {
                 rotated: true,
@@ -77,7 +77,7 @@ class RaceChart {
                         left: 0
                     },
                     type: 'category',
-                    categories: ['White','Black','Hispanic','Native','Asian','Other'],
+                    categories: ['White','Black','Hispanic','Native','Asian'],
                     tick: {
                         multiline: false
                     }

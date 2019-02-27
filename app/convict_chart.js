@@ -52,7 +52,7 @@ class ConvictChart {
                 }
             },
             color: {
-                pattern: ['#F7F7F7','#969696','#252525']
+                pattern: ['#D9D5E6','#857AAA','#271D42']
             },
             axis: {
                 // rotated: true,
@@ -96,7 +96,7 @@ class ConvictChart {
             },
             tooltip: {
                 contents: function(d, defaultTitleFormat, defaultValueFormat, color) {
-                    var tipThread = '<div class="chart-tooltip gray3"><span class="tooltip-label">' + d[0].x + '</span></div><div class="chart-tooltip gray1"><span class="tooltip-label">Petty: </span><span class="tooltip-value">' + defaultValueFormat(d[0].value) + '</span></div><div class="chart-tooltip gray3"><span class="tooltip-label">Misdemeanor: </span><span class="tooltip-value">' + defaultValueFormat(d[1].value) + '</span></div><div class="chart-tooltip gray5"><span class="tooltip-label">Felony: </span><span class="tooltip-value">' + defaultValueFormat(d[2].value) + '</span></div>';
+                    var tipThread = '<div class="chart-tooltip gray5"><span class="tooltip-label">' + d[0].x + '</span></div><div class="chart-tooltip purple1"><span class="tooltip-label">Petty: </span><span class="tooltip-value">' + defaultValueFormat(d[0].value) + '</span></div><div class="chart-tooltip purple3"><span class="tooltip-label">Misdemeanor: </span><span class="tooltip-value">' + defaultValueFormat(d[1].value) + '</span></div><div class="chart-tooltip purple5"><span class="tooltip-label">Felony: </span><span class="tooltip-value">' + defaultValueFormat(d[2].value) + '</span></div>';
 
                     return tipThread;
                 }

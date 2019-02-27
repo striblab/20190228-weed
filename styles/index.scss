@@ -85,7 +85,27 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
 		background-color: #333333;
 		color: #fff;
 	}
-  
+	.purple1 {
+		fill: #D9D5E6 !important;
+		background-color: #D9D5E6;
+	}
+	.purple2 {
+		fill: #857AAA;
+		background-color: #857AAA;
+	}
+	.purple3 {
+		fill: #857AAA;
+		background-color: #857AAA;
+	}
+	.purple4 {
+		fill: #857AAA;
+		background-color: #857AAA;
+	}
+	.purple5 {
+		fill: #271D42;
+		background-color: #271D42;
+	}
+
   .chart, .overlay {
     pointer-events:none !important;
   }
@@ -101,3 +121,4 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
   .c3-tooltip-container {
     font-size:0.8em !important;
 }
+
