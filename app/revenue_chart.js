@@ -67,7 +67,7 @@ class RevenueChart {
             axis: {
                 rotated: true,
                 y: {
-                    max: 10000,
+                    max: 8000,
                     min: 0, 
                     padding: {
                         bottom: 0,
@@ -75,7 +75,7 @@ class RevenueChart {
                     },
                     tick: {
                         count: 4,
-                        values: [0, 2000, 4000, 6000, 8000, 10000],
+                        values: [0, 2000, 4000, 6000, 8000],
                         format: d3.format('$,')
                     }
                 },
