@@ -18,7 +18,7 @@ class RevenueChart {
             totals = ['Revenue',633,406,91,60,54,50,41,37,32,17,17,9,7,7];
         } else {
             states = ['CA','CO','WA','OR','MA','NV','AK'];
-            totals = ['Revenue',2750,1560,1000,777,106,102,39];
+            totals = ['Revenue',6000,1500,1300,520,195,102,39];
         }
 
         var padding = {
@@ -67,7 +67,7 @@ class RevenueChart {
             axis: {
                 rotated: true,
                 y: {
-                    max: 4000,
+                    max: 10000,
                     min: 0, 
                     padding: {
                         bottom: 0,
@@ -75,7 +75,7 @@ class RevenueChart {
                     },
                     tick: {
                         count: 4,
-                        values: [0, 1000, 2000, 3000, 4000],
+                        values: [0, 2000, 4000, 6000, 8000, 10000],
                         format: d3.format('$,')
                     }
                 },
