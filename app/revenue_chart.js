@@ -62,7 +62,7 @@ class RevenueChart {
                 }
             },
             color: {
-                pattern: ['#5BBF48']
+                pattern: ['#299E3D']
             },
             axis: {
                 rotated: true,

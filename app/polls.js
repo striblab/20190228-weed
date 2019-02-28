@@ -55,7 +55,7 @@ class PollChart {
                 }
             },
             color: {
-                pattern: ['#5BBF48','#C7E5B5']
+                pattern: ['#299E3D','#C7E5B5']
             },
             axis: {
                 // rotated: true,
@@ -102,7 +102,7 @@ class PollChart {
                     var tipThread = '<div class="chart-tooltip gray3"><span class="tooltip-label">' + d[0].x + '</span></div>';
 
                     if (d[0].value != null) {
-                        tipThread = tipThread + '<div class="chart-tooltip green3"><span class="tooltip-label">National:</span><span class="tooltip-value">' + defaultValueFormat(d[0].value) + '</span></div>';
+                        tipThread = tipThread + '<div class="chart-tooltip green4"><span class="tooltip-label">National:</span><span class="tooltip-value">' + defaultValueFormat(d[0].value) + '</span></div>';
                     }
                     if (d[1].value != null) {
                         tipThread = tipThread + '<div class="chart-tooltip green2"><span class="tooltip-label">Midwest:</span><span class="tooltip-value">' + defaultValueFormat(d[1].value) + '</span></div>';

@@ -137,7 +137,7 @@ $(window).on("load", function() {
                 } 
                 //medical oils
                 else if (d.state_postal == "AL" || d.state_postal == "GA" || d.state_postal == "IN" || d.state_postal == "IA" || d.state_postal == "KY" || d.state_postal == "MS"  || d.state_postal == "NC" || d.state_postal == "SC"  || d.state_postal == "TN"  || d.state_postal == "TX"  || d.state_postal == "VA"  || d.state_postal == "WY") {
-                    return "gray4";
+                    return "steel";
                 }
                else { return "purple3"; }
             })

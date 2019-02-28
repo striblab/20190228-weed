@@ -89,10 +89,10 @@ class RaceChart {
                 },
                 y: {
                     lines: [{
-                        value: 0.5,
-                        text: '',
-                        position: 'start',
-                        class: 'powerline'
+                        // value: 0.5,
+                        // text: '',
+                        // position: 'start',
+                        // class: 'powerline'
                     }]
 
                 }

@@ -327,6 +327,10 @@ h2 {
 		fill: #271D42;
 		background-color: #271D42;
 	}
+	.steel {
+		fill: #A8B9C5 !important;
+		background-color: #A8B9C5 !important;
+	}
 	/*-- Chart --*/
 	.c3 svg {
 		font: 10px sans-serif;
@@ -500,9 +504,16 @@ h2 {
 	}
 }
 
+#bigmap {
+	width:700px !important;
+}
+
 @media (max-width:800px) {
 	#wrapper, .slide, .legend_block, .adjacent {
 		width: 100%;
+	}
+	#bigmap {
+		width:100% !important;
 	}
 	.legendary {
 		font-size:0.9am !important;
