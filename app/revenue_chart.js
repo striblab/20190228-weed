@@ -17,8 +17,8 @@ class RevenueChart {
             states = ['MI','AZ','IL','RI','NM','CT','NY','NJ','MT','FL','HI','MN','NH','DE'];
             totals = ['Revenue',633,406,91,60,54,50,41,37,32,17,17,9,7,7];
         } else {
-            states = ['CA','WA','CO','NV','AK','OR'];
-            totals = ['Revenue',345,319,266,70,11,9];
+            states = ['CA','WA','CO','OR','NV','AK'];
+            totals = ['Revenue',345,319,266,82,70,11];
         }
 
         var padding = {
