@@ -136,9 +136,9 @@ $(window).on("load", function() {
                     return "green1";
                 } 
                 //medical oils
-                else if (d.state_postal == "AL" || d.state_postal == "GA" || d.state_postal == "IN" || d.state_postal == "IA" || d.state_postal == "KY" || d.state_postal == "MS"  || d.state_postal == "NC" || d.state_postal == "SC"  || d.state_postal == "TN"  || d.state_postal == "TX"  || d.state_postal == "VA"  || d.state_postal == "WY") {
-                    return "steel";
-                }
+                // else if (d.state_postal == "AL" || d.state_postal == "GA" || d.state_postal == "IN" || d.state_postal == "IA" || d.state_postal == "KY" || d.state_postal == "MS"  || d.state_postal == "NC" || d.state_postal == "SC"  || d.state_postal == "TN"  || d.state_postal == "TX"  || d.state_postal == "VA"  || d.state_postal == "WY") {
+                //     return "steel";
+                // }
                else { return "purple3"; }
             })
             .attr('rx', 0)
@@ -172,7 +172,7 @@ $(window).on("load", function() {
 
             })
             .text(function(d) {
-                return d.state_postal + d.mark;
+                return d.state_postal;
             });
     },
     state_pos_co2: [{'state_full':'Alabama','state_postal':'AL','row':5,'column':6,'mark':''},

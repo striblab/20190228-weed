@@ -25,7 +25,7 @@ class CrimeChart {
                 x: 'x',
                 columns: [
                     ['x',2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019],
-                    ['Convictions',11366,11399,11153,11872,12043,11969,11650,11590,8638,8856,9495,null,null]
+                    ['Arrests',11366,11399,11153,11872,12043,11969,11650,11590,8638,8856,9495,null,null]
                 ],
                 type: 'area',
                 labels: {
@@ -86,15 +86,15 @@ class CrimeChart {
                 focus: {
                     show: false
                 },
-                x: {
-                    lines: [{
-                        value: 2014,
-                        text: '',
-                        position: 'start',
-                        class: 'powerline'
-                    }]
+                // x: {
+                //     lines: [{
+                //         value: 2014,
+                //         text: '',
+                //         position: 'start',
+                //         class: 'powerline'
+                //     }]
 
-                }
+                // }
             },
             tooltip: {
                 contents: function(d, defaultTitleFormat, defaultValueFormat, color) {
